@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="gui.mainEngine.Gui" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/mainEngine/Gui.java" binary="false" label="gui" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="111" y="0"/>    
+    <execution id="2">      
+      <position height="627" width="70" x="5" y="140"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="241" width="70" x="5" y="182"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="280" width="7" x="37" y="466"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="7" x="40" y="704"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="gui.tableElements.tableConstructors.TableConstructionZoomArea" 
+    project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/tableConstructors/TableConstructionZoomArea.java" binary="false" 
+    label="tableConstructionZoomArea" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="508" y="0"/>    
+    <execution id="8">      
+      <position height="199" width="185" x="79" y="203"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="7" x="168" y="245"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="7" x="168" y="304"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="7" x="168" y="360"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="data.dataKeeper.GlobalDataKeeper" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/data/dataKeeper/GlobalDataKeeper.java" binary="false" label="globalDataKeeper" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="508" y="0"/>    
+    <execution id="10">      
+      <position height="63" width="125" x="268" y="487"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="125" x="268" y="595"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="125" x="268" y="666"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="tableClustering.clusterExtractor.commons.ClusterCollector" 
+    project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/tableClustering/clusterExtractor/commons/ClusterCollector.java" binary="false" 
+    label="clusterCollector" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="500" y="0"/>    
+    <execution id="26">      
+      <position height="21" width="182" x="397" y="508"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="gui.tableElements.tableConstructors.TableConstructionClusterTablesPhasesZoomA" 
+    project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/tableConstructors/TableConstructionClusterTablesPhasesZoomA.java" 
+    binary="false" label="tableConstructionClusterTablesPhasesZoomA" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="714" y="0"/>    
+    <execution id="12">      
+      <position height="63" width="287" x="583" y="574"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="gui.tableElements.tableConstructors.TableConstructionZoomArea" 
+    project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/tableConstructors/TableConstructionZoomArea.java" binary="false" 
+    label="tableConstructionZoomArea1" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="823" y="0"/>    
+    <execution id="14">      
+      <position height="63" width="185" x="874" y="645"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="showSelectionToZoomArea(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="showClusterSelectionToZoomArea(int,java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" 
+    operation="TableConstructionZoomArea(data.dataKeeper.GlobalDataKeeper,java.util.ArrayList&lt;java.lang.String&gt;,int)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="getClusterCollectors():java.util.ArrayList&lt;ClusterCollector&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" 
+    operation="TableConstructionClusterTablesPhasesZoomA(data.dataKeeper.GlobalDataKeeper,java.util.ArrayList&lt;java.lang.String&gt;)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" 
+    operation="TableConstructionZoomArea(data.dataKeeper.GlobalDataKeeper,java.util.ArrayList&lt;java.lang.String&gt;,int)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="makeZoomAreaTableForCluster():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="18" operation="fillSelectedPPLTransitions():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="fillSelectedPPLSchemas():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="fillSelectedTables():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="25" operation="getClusters():java.util.ArrayList&lt;Cluster&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="31" operation="getAllPPLSchemas():java.util.TreeMap&lt;String,PPLSchema&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="33" operation="getAllPPLSchemas():java.util.TreeMap&lt;String,PPLSchema&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>
+</sequence-diagram>

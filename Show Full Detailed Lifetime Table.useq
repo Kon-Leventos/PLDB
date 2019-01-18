@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="gui.mainEngine.Gui" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/mainEngine/Gui.java" binary="false" label="gui" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="140" y="0"/>    
+    <execution id="2">      
+      <position height="308" width="70" x="5" y="112"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="95" width="7" x="37" y="304"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="gui.tableElements.tableConstructors.TableConstructionAllSquaresIncluded" 
+    project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/tableConstructors/TableConstructionAllSquaresIncluded.java" 
+    binary="false" label="tableConstructionAllSquaresIncluded" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="290" y="0"/>    
+    <execution id="4">      
+      <position height="113" width="236" x="79" y="133"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="7" x="194" y="214"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="7" x="197" y="240"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="data.dataKeeper.GlobalDataKeeper" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/data/dataKeeper/GlobalDataKeeper.java" binary="false" label="globalDataKeeper" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="448" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="125" x="319" y="154"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="7" x="378" y="204"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="gui.tableElements.commons.MyTableModel" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/commons/MyTableModel.java" binary="false" label="myTableModel" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="583" y="0"/>    
+    <execution id="12">      
+      <position height="21" width="125" x="448" y="333"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="gui.tableElements.commons.JvTable" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/tableElements/commons/JvTable.java" binary="false" label="jvTable" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="670" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="125" x="577" y="357"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="TableConstructionAllSquaresIncluded(data.dataKeeper.GlobalDataKeeper)" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="constructColumns():java.lang.String[]" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="constructRows():java.lang.String[][]" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="makeDetailedTable(java.lang.String[],java.lang.String[][],boolean):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="MyTableModel(java.lang.String[],java.lang.String[][])" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="JvTable(javax.swing.table.TableModel)" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="getAllPPLSchemas():java.util.TreeMap&lt;String,PPLSchema&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="getAllPPLTransitions():java.util.TreeMap&lt;Integer,PPLTransition&gt;" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>
+</sequence-diagram>

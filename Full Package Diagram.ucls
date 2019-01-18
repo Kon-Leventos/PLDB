@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="data" project="PlutarchParallelLives" file="/PlutarchParallelLives/src/data" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="126" y="103"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="gui" project="PlutarchParallelLives" file="/PlutarchParallelLives/src/gui" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="101" x="419" y="102"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="phaseAnalyzer" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/phaseAnalyzer" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="476" y="324"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="tableClustering" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/tableClustering" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="179" y="324"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

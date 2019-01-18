@@ -1,2 +1,2 @@
 # PLDB
-Plutarch Parallel Lives - Beautified
+Plutarch Parallel Lives Beautified

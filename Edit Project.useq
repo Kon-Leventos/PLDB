@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="gui.mainEngine.Gui" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/mainEngine/Gui.java" binary="false" label="gui" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="203" y="0"/>    
+    <execution id="2">      
+      <position height="201" width="70" x="5" y="99"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="7" x="37" y="174"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="7" x="37" y="258"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" name="gui.dialogs.CreateProjectJDialog" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/dialogs/CreateProjectJDialog.java" binary="false" label="createProjectJDialog" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="219" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="144" x="79" y="120"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="63" width="7" x="148" y="153"/>    
+    </execution>  
+  </object>  
+  <message id="3" 
+    operation="CreateProjectJDialog(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getFile():java.io.File" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="importData(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="11" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>
+</sequence-diagram>

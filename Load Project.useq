@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="gui.mainEngine.Gui" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/gui/mainEngine/Gui.java" binary="false" label="gui" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="123" y="0"/>    
+    <execution id="2">      
+      <position height="285" width="70" x="5" y="101"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="105" width="70" x="5" y="143"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="7" x="37" y="285"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="7" x="37" y="344"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="data.dataKeeper.GlobalDataKeeper" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/data/dataKeeper/GlobalDataKeeper.java" binary="false" label="globalDataKeeper" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="318" y="0"/>    
+    <execution id="10">      
+      <position height="63" width="125" x="79" y="164"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="data.dataProccessing.Worker" project="PlutarchParallelLives" 
+    file="/PlutarchParallelLives/src/data/dataProccessing/Worker.java" binary="false" label="worker" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="259" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="97" x="208" y="185"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="importData(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="fillTable():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="fillTree():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setData():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="work():void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>
+</sequence-diagram>
